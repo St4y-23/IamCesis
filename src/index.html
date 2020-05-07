@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="content">
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="#000"
+					d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+				</path>
+			</svg>
+		</div>
+
+		<!-- Sprites -->
+		@@include('./blocks/_sprites.html')
+
+		<!-- Header -->
+		@@include('./blocks/_header.html')
+
+
+		<!-- Intro -->
+		<section class="intro">
+			<div class="intro__inner">
+				<h1 class="intro__title">I am Cesis</h1>
+				<div class="intro__subtitle">Let’s make your website Great Again!</div>
+				<div class="intro__btn btn btn--white">view portfolio</div>
+			</div>
+
+			<div class="intro__arrow"></div>
+		</section>
+		
+		
+
+
+
+
+
+
+
+
+
+		<!-- Footer -->
+		@@include('./blocks/_footer.html')
+
+
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		@@include('./blocks/_scripts.html')
+		<script src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>
+
+
+<!-- 
+	<picture>
+		<source class="img" srcset="img/intro/logo.webp" type="image/webp">
+		<img class="img" src="img/intro/logo.png" alt="">
+	</picture>
+ -->

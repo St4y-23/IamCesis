@@ -1,0 +1,21 @@
+$text: #72787a;
+$grey: #818586;
+$dark: #2a2d2e;
+$blue: #7443ff;
+$lightBlue: #69d2e7;
+$darkBlue: #262b40;
+$violet: #9478e7;
+$red: #ff878d;
+
+
+@function rem($px) {
+  @return ($px / 16) +rem;
+}
+
+@mixin centre{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
