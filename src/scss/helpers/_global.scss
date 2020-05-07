@@ -68,28 +68,31 @@ body{
   color: $dark;
   font-weight: 600;
   line-height: 1.25;
+  margin-bottom: 30px;
 }
 .subtitle{
   font-size: rem(18);
   color: $dark;
   font-weight: 300;
   line-height: 1.5;
+  margin-bottom: 30px;
 }
 .text{
 	font-size: rem(14);
   color: $text;
   font-weight: 400;
-	line-height: 1.7;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
 // Button
 .btn{
-	padding: 20px 40px;
+	padding: 25px 0;
   width: 100%;
   max-width: 190px;
 	background-color: transparent;
   border: 1px solid $dark;
-  border-radius: 25%;
+  border-radius: 50px;
 	color: $dark;
 	font-size: rem(12);
 	font-weight: 700;
@@ -112,8 +115,8 @@ body{
     height: 100%;
     background: $blue;
     transition: linear .2s;
-    transform: translateY(-100%);
-    z-index: 1;
+    transform: translateX(-100%);
+    z-index: -1;
   }
 
 	&:hover{
@@ -121,7 +124,7 @@ body{
     border-color: $blue;
 
 		&::before{
-      transform: translateY(0);
+      transform: translateX(0);
     }
 	}
 }
@@ -174,14 +177,14 @@ body{
 // Burger
 .burger {
   --burger-menu-radius: 4em;
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 10;
   display: block;
   width: var(--burger-menu-radius);
   height: var(--burger-menu-radius);
-  background: white;
-  border: solid 2px hsla(184, 9%, 62%, 0.4);
-  border-radius: 50%;
+  background: transparent;
   outline: none;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -191,8 +194,7 @@ body{
     left: 25%;
     width: 50%;
     height: 3px;
-    background: hsla(210, 29%, 24%, 0.3);
-    border-radius: 10px;
+    background: #fff;
     overflow: hidden;
     transition: all 0.5s ease;
 
@@ -215,7 +217,7 @@ body{
       left: 0;
       width: 100%;
       height: 100%;
-      background: #2980b9;
+      background: $blue;
       transform: translateX(-100%);
       transition: all 0.25s ease;
     }
@@ -245,9 +247,6 @@ body{
   }
 
   &:hover {
-    box-shadow: 0.4px 0.4px 0.8px rgba(0, 0, 0, 0.042), 1px 1px 2px rgba(0, 0, 0, 0.061),
-      1.9px 1.9px 3.8px rgba(0, 0, 0, 0.075), 3.4px 3.4px 6.7px rgba(0, 0, 0, 0.089),
-      6.3px 6.3px 12.5px rgba(0, 0, 0, 0.108), 15px 15px 30px rgba(0, 0, 0, 0.15);
 
     .line::after {
       transform: translateX(0);

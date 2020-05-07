@@ -12,7 +12,7 @@ $red: #ff878d;
   @return ($px / 16) +rem;
 }
 
-@mixin centre{
+@mixin center{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
