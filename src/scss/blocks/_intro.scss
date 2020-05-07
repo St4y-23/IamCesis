@@ -1,0 +1,21 @@
+.intro{
+  height: 100vh;
+  background: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro__inner{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.intro__title{
+  font-size: rem(200);
+  font-weight: 700;
+  line-height: .25;
+}
+.intro__subtitle{
+  font-size: rem(36);
+  line-height: 1.3;
+}
