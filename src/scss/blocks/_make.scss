@@ -1,0 +1,49 @@
+.make{
+  margin-bottom: 140px;
+}
+.make__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.make__logo{
+  margin-right: 270px;
+  margin-top: -60px;
+  position: relative;
+  
+  &::before{
+    position: absolute;
+    content: '';
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    @include center;
+    border: 5px solid #000;
+    background: transparent;
+  }
+}
+.make__box{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: right;
+}
+.make__title{
+  padding-right: 70px;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 90%;
+    background-color: $blue;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+.make__subtitle{
+  margin-top: -10px;
+}
