@@ -43,6 +43,23 @@
 .works__item{
   position: relative;
   margin-bottom: 24px;
+  overflow: hidden;
+  transition: linear .5s;
+
+  &:hover{
+    border-radius: 30px;
+
+    .works__image{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.works__image{
+  img{
+    transition: linear .5s;
+  }
 }
 
 .works__wrapper{

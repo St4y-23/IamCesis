@@ -1,7 +1,7 @@
-.arrow__icon{
-  width: 55px;
-  height: 55px;
-  fill: rgba(#000, .5);
+.arrow__icon-btn{
+  width: 20px;
+  height: 20px;
+  fill: $darkBlue;
   transition: linear .2s;
 }
 
@@ -17,6 +17,14 @@
   fill: #fff;
 }
 
+.footer-logo__icon{
+  width: 40px;
+  height: 25px;
+  fill: #fff;
+  position: relative;
+  z-index: 2;
+}
+
 .features__icon-logo{
   width: 272px;
   height: 166px;
@@ -27,6 +35,15 @@
   width: 20px;
   height: 20px;
   fill: #000;
+}
+
+.features__icon-arrows{
+  width: 89px;
+  height: 89px;
+  fill: #fff;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
 }
 
 .make__icon-logo{

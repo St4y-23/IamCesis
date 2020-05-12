@@ -1,0 +1,115 @@
+.footer__inner {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 9px solid #14171d;
+}
+
+.footer__logo-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+  margin-left: 15px;
+}
+.footer__logo {
+  position: relative;
+}
+.footer__logo-circle {
+  position: absolute;
+  @include center;
+  top: 40%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $darkBlue;
+  z-index: 1;
+}
+.footer__company {
+  font-size: rem(26);
+  font-weight: 600;
+  color: $darkBlue;
+  margin-left: 30px;
+  margin-top: -5px;
+}
+.footer__description {
+  margin-bottom: 15px;
+}
+.footer__social {
+  display: flex;
+  margin-left: -15px;
+}
+.footer__link {
+  font-size: rem(14);
+  padding: 0 15px;
+  position: relative;
+  transition: linear 0.2s;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:not(:first-child)::before {
+    position: absolute;
+    content: ".";
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.footer__subscribe {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__subscribe-title {
+  font-size: rem(18);
+  font-weight: 600;
+  color: $darkBlue;
+}
+
+.footer__form {
+  position: relative;
+}
+.inputBox {
+  position: relative;
+}
+.input {
+  color: #000;
+  border: none;
+  width: 100%;
+  background: none;
+  outline: none;
+  padding: 10px 25px 10px 0;
+
+  border-bottom: 1px solid $text;
+  transition: linear 0.2s;
+
+  &:focus ~ label,
+  &:valid ~ label {
+    top: -20px;
+    color: $blue;
+  }
+  &:focus,
+  &:valid {
+    border-color: $blue;
+  }
+}
+.label {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: rem(14);
+  transition: linear 0.2s;
+}
+
+.footer__form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

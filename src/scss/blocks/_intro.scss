@@ -1,11 +1,17 @@
 .intro{
   height: 100vh;
-  background: #282b30;
+  // background: #282b30;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-bottom: 170px;
+}
+.no-webp .intro{
+  background-image: url(img/main/main-bg_1.jpg)
 }
 .intro__inner{
   display: flex;
