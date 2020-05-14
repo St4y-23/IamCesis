@@ -1,4 +1,4 @@
-.intro{
+.intro {
   height: 100vh;
   // background: #282b30;
   background-position: center center;
@@ -10,29 +10,150 @@
   position: relative;
   margin-bottom: 170px;
 }
-.no-webp .intro{
-  background-image: url(img/main/main-bg_1.jpg)
+.no-webp .intro {
+  background-image: url(img/main/main-bg_1.jpg);
 }
-.intro__inner{
+.intro__inner {
   display: flex;
   flex-direction: column;
   color: #fff;
   align-items: center;
 }
-.intro__title{
+.intro__title {
   font-size: rem(200);
   font-weight: 700;
   line-height: 1;
 }
-.intro__subtitle{
+.title-svg{
+  margin-bottom: 30px;
+}
+.intro__subtitle {
   font-size: rem(36);
   line-height: 1.3;
   margin-bottom: 20px;
 }
 
-.intro__arrow{
+.intro__arrow {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#logo {
+  animation: fill .5s ease forwards 4s;
+
+  path:nth-child(1) {
+    stroke-dashoffset: 427;
+    stroke-dasharray: 427;
+    animation: line-anim 2s ease forwards;
+  }
+  path:nth-child(2) {
+    stroke-dashoffset: 1406;
+    stroke-dasharray: 1406;
+    animation: line-anim 5s ease forwards .3s;
+  }
+  path:nth-child(3) {
+    stroke-dashoffset: 912;
+    stroke-dasharray: 912;
+    animation: line-anim 2s ease forwards .6s;
+  }
+  path:nth-child(4) {
+    stroke-dashoffset: 673;
+    stroke-dasharray: 673;
+    animation: line-anim 2s ease forwards .9s;
+  }
+  path:nth-child(5) {
+    stroke-dashoffset: 912;
+    stroke-dasharray: 912;
+    animation: line-anim 2s ease forwards 1.2s;
+  }
+  path:nth-child(6) {
+    stroke-dashoffset: 673;
+    stroke-dasharray: 673;
+    animation: line-anim 2s ease forwards 1.5s;
+  }
+  path:nth-child(7) {
+    stroke-dashoffset: 627;
+    stroke-dasharray: 627;
+    animation: line-anim 2s ease forwards 1.8s;
+  }
+  path:nth-child(8) {
+    stroke-dashoffset: 579;
+    stroke-dasharray: 579;
+    animation: line-anim 2s ease forwards 2.1s;
+  }
+  path:nth-child(9) {
+    stroke-dashoffset: 414;
+    stroke-dasharray: 414;
+    animation: line-anim 2s ease forwards 2.4s;
+  }
+  path:nth-child(10) {
+    stroke-dashoffset: 579;
+    stroke-dasharray: 579;
+    animation: line-anim 2s ease forwards 2.7s;
+  }
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: #fff;
+  }
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {   
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
