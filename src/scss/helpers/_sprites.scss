@@ -14,7 +14,7 @@
 .logo__icon{
   width: 80px;
   height: 50px;
-  fill: #fff;
+  // fill: #fff;
 }
 
 .footer-logo__icon{
@@ -58,4 +58,11 @@
   fill: #fff;
   position: relative;
   z-index: 2;
+}
+
+.social__icon{
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  transition: .35s;
 }

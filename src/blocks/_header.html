@@ -3,6 +3,21 @@
   <a class="logo" href="#">
     <svg class="logo__icon">
       <use xlink:href="#logo"></use>
+      <defs>
+        <linearGradient id="skyGradient" x1="100%" y1="100%">
+          <stop offset="0%" stop-color="lightblue" stop-opacity=".8">
+            <animate attributeName="stop-color" values="lightblue;blue;red;red;aqua;red;red;purple;lightblue" dur="14s"
+              repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="lightblue" stop-opacity=".8">
+            <animate attributeName="stop-color"
+              values="lightblue;orange;purple;purple;aqua;purple;purple;blue;lightblue" dur="14s"
+              repeatCount="indefinite" />
+            <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+              repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+      </defs>
     </svg>
   </a>
 
@@ -11,5 +26,53 @@
     <div class="line"></div>
     <div class="line"></div>
   </div>
+
+
+  <!-- Menu -->
+
+  <div class="overlay" id="overlay">
+
+    <nav class="overlay-menu">
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social">
+
+      <a class="social-link" href="#">
+        <svg class="social__icon">
+          <use xlink:href="#twitter"></use>
+        </svg>
+      </a>
+
+      <a class="social-link" href="#">
+        <svg class="social__icon">
+          <use xlink:href="#insta"></use>
+        </svg>
+      </a>
+
+      <a class="social-link" href="#">
+        <svg class="social__icon">
+          <use xlink:href="#dribbble"></use>
+        </svg>
+      </a>
+
+      <a class="social-link" href="#">
+        <svg class="social__icon">
+          <use xlink:href="#behance"></use>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+
+
 
 </header>

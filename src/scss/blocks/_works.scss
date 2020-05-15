@@ -23,9 +23,9 @@
 
 .works__inner{
   display: flex;
-  flex-direction: column;
-  margin-left: -15px;
-  margin-right: -15px;
+  flex-wrap: wrap;
+  margin-left: -22px;
+  margin-right: -22px;
 }
 .works__row{
   display: flex;
@@ -33,7 +33,12 @@
 
 .works__col{
   width: 50%;
-  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+
+  &-small{
+    width: 25%;
+  }
 }
 .works__col-middle{
   width: 25%;
@@ -44,21 +49,19 @@
   position: relative;
   margin-bottom: 24px;
   overflow: hidden;
-  transition: linear .5s;
+  padding: 0 12px;
 
-  &:hover{
-    border-radius: 30px;
-
-    .works__image{
-      img{
-        transform: scale(1.1);
-      }
-    }
+  &-vertLong{
+    width: 25%;
   }
-}
-.works__image{
-  img{
-    transition: linear .5s;
+
+  &-big{
+    width: 50%;
+  }
+
+  &-horzLong,
+  &-small{
+    width: 100%;
   }
 }
 

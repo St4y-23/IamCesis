@@ -64,9 +64,7 @@ $(function () {
       }, 700);
   });
 
-  $('.burger').on('click', function () {
-    $('.nav').toggleClass('active')
-  });
+
 
 
 
@@ -106,17 +104,22 @@ $(function () {
 
     var panel = $(this).attr('href');
     $(panel).fadeIn(1000);
-    
+
     $('.tab__slider').slick('setPosition');
 
-    return false;  
+    return false;
 
 
-  });  
+  });
 
   $('.tabs li:first a').click();
 
 
+  // Menu overlay
+  $('.burger').click(function () {
+    $('.nav').toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
 
 
 
@@ -124,6 +127,32 @@ $(function () {
 
 
 
+
+
+  // Intro Scroll Arrow down
+  $('.intro__arrow').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 170 }, 500, 'linear');
+  });
+
+  // Back to Top
+  var amountScrolled = 1080;
+  var amountScrolledNav = 25;
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > amountScrolled) {
+      $('button.back-to-top').addClass('show');
+    } else {
+      $('button.back-to-top').removeClass('show');
+    }
+  });
+
+  $('button.back-to-top').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
 
 
 
@@ -131,6 +160,15 @@ $(function () {
 
   // Mixitup
   var mixer = mixitup('.works__inner');
+
+
+
+  // Stroke-offset = path
+  //  const logo = document.querySelectorAll("#logo path");
+
+  //  for(let i = 0; i<logo.length; i++){
+  //    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+  //  }
 
 
 });
