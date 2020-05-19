@@ -81,6 +81,8 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
 
   $('.testimonials__slider').slick({
@@ -89,8 +91,25 @@ $(function () {
     arrows: false,
     dots: true,
     centerMode: true,
-    centerPadding: '60px',
-    focusOnSelect: true
+    centerPadding: '0px',
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1170,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        }
+      },
+
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          fade: true,
+        }
+      },
+    ]
   });
 
 
@@ -130,10 +149,22 @@ $(function () {
 
 
   // Intro Scroll Arrow down
-  $('.intro__arrow').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 170 }, 500, 'linear');
-  });
+  if (window.matchMedia("(min-width: 1201px)").matches) {
+
+    $('.intro__arrow').on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 170 }, 500, 'linear');
+    });
+    
+  } else {
+
+    $('.intro__arrow').on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100 }, 500, 'linear');
+    });
+    
+  }
+  
 
   // Back to Top
   var amountScrolled = 1080;

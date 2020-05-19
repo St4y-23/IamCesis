@@ -215,6 +215,12 @@
     </g>
   </symbol>
 
+  <symbol id="logo-circle" viewBox="0 0 270 270">
+    <g>
+      <path class="cls-1" fill="url(#skyGradient)" d="M187.5,158,176.58,147a17.12,17.12,0,0,1-27.21-4.15A34.89,34.89,0,0,1,141.55,158,32.58,32.58,0,0,0,187.5,158Z"/><path class="cls-1" fill="url(#skyGradient)" d="M115,167.47A32.36,32.36,0,0,0,137.92,158c.62-.62,1.22-1.26,1.78-1.92a31.57,31.57,0,0,0,7.84-20.78h0a17.22,17.22,0,0,1,17-17.26,17,17,0,0,1,12,5l10.92-10.92a32.37,32.37,0,0,0-22.95-9.52,32.71,32.71,0,0,0-32.47,32.72A16.46,16.46,0,0,1,127,147a17,17,0,0,1-29-11.78A17.22,17.22,0,0,1,115,118V102.53A32.72,32.72,0,0,0,82.5,135.25,32.3,32.3,0,0,0,115,167.47Z"/><path fill="url(#skyGradient)" d="M135,5a130,130,0,0,1,91.92,221.92A130,130,0,1,1,43.08,43.08,129.12,129.12,0,0,1,135,5m0-5A135,135,0,1,0,270,135,135,135,0,0,0,135,0Z"/>
+    </g>
+  </symbol>
+
 </svg>
 
 
@@ -267,36 +273,36 @@
 
     <nav class="overlay-menu">
       <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="nav__link active" href="#">Home</a></li>
+        <li><a class="nav__link" href="#">About</a></li>
+        <li><a class="nav__link" href="#">Portfolio</a></li>
+        <li><a class="nav__link" href="#">Services</a></li>
+        <li><a class="nav__link" href="#">Blog</a></li>
+        <li><a class="nav__link" href="#">Contact</a></li>
       </ul>
     </nav>
 
     <div class="social">
 
-      <a class="social-link" href="#">
+      <a class="social__link" href="#">
         <svg class="social__icon">
           <use xlink:href="#twitter"></use>
         </svg>
       </a>
 
-      <a class="social-link" href="#">
+      <a class="social__link" href="#">
         <svg class="social__icon">
           <use xlink:href="#insta"></use>
         </svg>
       </a>
 
-      <a class="social-link" href="#">
+      <a class="social__link" href="#">
         <svg class="social__icon">
           <use xlink:href="#dribbble"></use>
         </svg>
       </a>
 
-      <a class="social-link" href="#">
+      <a class="social__link" href="#">
         <svg class="social__icon">
           <use xlink:href="#behance"></use>
         </svg>
@@ -310,7 +316,6 @@
 
 </header>
 
-		<!-- width="1031" height="165" -->
 
 		<!-- Intro -->
 		<section class="intro" id="intro" style="background-image: url(img/main/main-bg_1.webp)">
@@ -348,7 +353,7 @@
 			</div>
 
 			<a class="intro__arrow" href="#features">
-				<svg class="arrows">
+				<svg class="arrows" viewBox="0 0 60 72">
 					<path class="a1" d="M0 0 L30 32 L60 0"></path>
 					<path class="a2" d="M0 20 L30 52 L60 20"></path>
 					<path class="a3" d="M0 40 L30 72 L60 40"></path>
@@ -395,7 +400,7 @@
 						<div class="features__box"></div>
 					</div>
 
-					<div class="features__content">
+					<div class="features__content features__content-top">
 
 						<svg class="features__icon-logo">
 							<use xlink:href="#logo"></use>
@@ -420,7 +425,7 @@
 							<img class="img" src="img/features/features_2.jpg" alt="">
 						</picture>
 
-						<div class="features__content">
+						<div class="features__content features__content-bottom">
 
 							<div class="features__play">
 								<svg class="features__icon-play">
@@ -701,7 +706,7 @@
 				</div>
 
 				<div class="plans__col">
-					<div class="plans__item">
+					<div class="plans__item active">
 						<div class="plans__logo">
 							<picture>
 								<source class="img" srcset="img/plans/plans_rocket.webp" type="image/webp">
@@ -758,9 +763,25 @@
 				<div class="make__wrapper">
 					<div class="make__logo">
 						<svg class="make__icon-logo">
-							<use xlink:href="#logo"></use>
+							<use xlink:href="#logo-circle"></use>
+							<defs>
+								<linearGradient id="skyGradient" x1="100%" y1="100%">
+									<stop offset="0%" stop-color="lightblue" stop-opacity=".8">
+										<animate attributeName="stop-color" values="lightblue;blue;red;red;aqua;red;red;purple;lightblue" dur="14s"
+											repeatCount="indefinite" />
+									</stop>
+									<stop offset="100%" stop-color="lightblue" stop-opacity=".8">
+										<animate attributeName="stop-color"
+											values="lightblue;orange;purple;purple;aqua;purple;purple;blue;lightblue" dur="14s"
+											repeatCount="indefinite" />
+										<animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+											repeatCount="indefinite" />
+									</stop>
+								</linearGradient>
+							</defs>
 						</svg>
 					</div>
+
 					<div class="make__box">
 						<div class="make__title title">Let’s make something great together</div>
 						<div class="make__subtitle subtitle">I build identities and experiences to elevate & empower organizations.
@@ -1057,8 +1078,6 @@
 			<div class="container">
 				<div class="partners__inner">
 
-					<!-- Partners__row -->
-					<div class="partners__row">
 
 						<div class="partners__item">
 							<div class="partners__img">
@@ -1105,12 +1124,6 @@
 							</div>
 						</div>
 
-					</div>
-
-
-					<!-- Partners__row -->
-					<div class="partners__row">
-
 						<div class="partners__item">
 							<div class="partners__img">
 								<picture>
@@ -1156,11 +1169,12 @@
 							</div>
 						</div>
 
-					</div>
-
+						
 				</div>
 			</div>
 		</div>
+
+
 
 		<!-- News -->
 		<div class="news">

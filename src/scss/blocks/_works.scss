@@ -4,6 +4,7 @@
 
 .works__btn-box{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 90px;
@@ -26,6 +27,7 @@
   flex-wrap: wrap;
   margin-left: -22px;
   margin-right: -22px;
+  overflow: hidden;
 }
 .works__row{
   display: flex;

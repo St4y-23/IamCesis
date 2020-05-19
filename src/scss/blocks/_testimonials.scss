@@ -9,6 +9,7 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 15px;
   margin-bottom: 80px;
   text-align: center;
 }
@@ -19,10 +20,11 @@
 .testimonials__slider{
   max-width: 1300px;
   margin: 0 auto;
-
-  // .slick-current{
-  //   box-shadow: 10px 20px 10px 10px $violet;
-  // }
+}
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  outline: none;
 }
 
 .testimonials__item{

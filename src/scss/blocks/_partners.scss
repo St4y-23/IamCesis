@@ -3,20 +3,23 @@
 }
 .partners__inner{
   display: flex;
-  flex-direction: column;
-}
-.partners__row{
-  display: flex;
-  // margin: 0 auto;
-  justify-content: space-between;
-  margin-bottom: 70px;
-
+  flex-wrap: wrap;
 }
 .partners__item{
-  width: 25%;
-  // max-width: 200px;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 45px;
+  margin-bottom: 50px;
+
+  img{
+    transition: linear .2s;
+    opacity: .6;
+  }
+
+  &:hover{
+    img{
+      opacity: 1;
+    }
+  }
 }

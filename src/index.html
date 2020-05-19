@@ -24,7 +24,6 @@
 		<!-- Header -->
 		@@include('./blocks/_header.html')
 
-		<!-- width="1031" height="165" -->
 
 		<!-- Intro -->
 		<section class="intro" id="intro" style="background-image: url(img/main/main-bg_1.webp)">
@@ -62,7 +61,7 @@
 			</div>
 
 			<a class="intro__arrow" href="#features">
-				<svg class="arrows">
+				<svg class="arrows" viewBox="0 0 60 72">
 					<path class="a1" d="M0 0 L30 32 L60 0"></path>
 					<path class="a2" d="M0 20 L30 52 L60 20"></path>
 					<path class="a3" d="M0 40 L30 72 L60 40"></path>
@@ -109,7 +108,7 @@
 						<div class="features__box"></div>
 					</div>
 
-					<div class="features__content">
+					<div class="features__content features__content-top">
 
 						<svg class="features__icon-logo">
 							<use xlink:href="#logo"></use>
@@ -134,7 +133,7 @@
 							<img class="img" src="img/features/features_2.jpg" alt="">
 						</picture>
 
-						<div class="features__content">
+						<div class="features__content features__content-bottom">
 
 							<div class="features__play">
 								<svg class="features__icon-play">
@@ -415,7 +414,7 @@
 				</div>
 
 				<div class="plans__col">
-					<div class="plans__item">
+					<div class="plans__item active">
 						<div class="plans__logo">
 							<picture>
 								<source class="img" srcset="img/plans/plans_rocket.webp" type="image/webp">
@@ -472,9 +471,25 @@
 				<div class="make__wrapper">
 					<div class="make__logo">
 						<svg class="make__icon-logo">
-							<use xlink:href="#logo"></use>
+							<use xlink:href="#logo-circle"></use>
+							<defs>
+								<linearGradient id="skyGradient" x1="100%" y1="100%">
+									<stop offset="0%" stop-color="lightblue" stop-opacity=".8">
+										<animate attributeName="stop-color" values="lightblue;blue;red;red;aqua;red;red;purple;lightblue" dur="14s"
+											repeatCount="indefinite" />
+									</stop>
+									<stop offset="100%" stop-color="lightblue" stop-opacity=".8">
+										<animate attributeName="stop-color"
+											values="lightblue;orange;purple;purple;aqua;purple;purple;blue;lightblue" dur="14s"
+											repeatCount="indefinite" />
+										<animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+											repeatCount="indefinite" />
+									</stop>
+								</linearGradient>
+							</defs>
 						</svg>
 					</div>
+
 					<div class="make__box">
 						<div class="make__title title">Let’s make something great together</div>
 						<div class="make__subtitle subtitle">I build identities and experiences to elevate & empower organizations.
@@ -771,8 +786,6 @@
 			<div class="container">
 				<div class="partners__inner">
 
-					<!-- Partners__row -->
-					<div class="partners__row">
 
 						<div class="partners__item">
 							<div class="partners__img">
@@ -819,12 +832,6 @@
 							</div>
 						</div>
 
-					</div>
-
-
-					<!-- Partners__row -->
-					<div class="partners__row">
-
 						<div class="partners__item">
 							<div class="partners__img">
 								<picture>
@@ -870,11 +877,12 @@
 							</div>
 						</div>
 
-					</div>
-
+						
 				</div>
 			</div>
 		</div>
+
+
 
 		<!-- News -->
 		<div class="news">

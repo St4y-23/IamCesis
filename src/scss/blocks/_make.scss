@@ -3,31 +3,19 @@
 }
 .make__wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 100px;
+  margin: 0 20px 100px;
 }
 .make__logo{
-  margin-right: 270px;
-  margin-top: -60px;
-  position: relative;
-  
-  &::before{
-    position: absolute;
-    content: '';
-    width: 270px;
-    height: 270px;
-    border-radius: 50%;
-    @include center;
-    border: 5px solid #000;
-    background: transparent;
-  }
+  margin-top: -40px;
 }
 .make__box{
   display: flex;
   flex-direction: column;
   max-width: 800px;
   text-align: right;
+  margin-left: 15px;
 }
 .make__title{
   padding-right: 70px;

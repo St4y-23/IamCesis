@@ -37,6 +37,7 @@
   bottom: 50px;
   left: 100px;
   max-width: 680px;
+  padding-right: 25px;
   z-index: 2;
   color: #fff;
 }
@@ -52,10 +53,18 @@
   font-size: rem(24);
   font-weight: 600;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 .news__box-text{
   margin-bottom: 30px;
   color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 .news__box-btn{
   color: #fff;
@@ -69,6 +78,7 @@
   text-align: center;
   width: 100%;
   height: 100%;
+  padding: 0 10px;
 }
 .news__wrapper-title{
   margin-bottom: 0;

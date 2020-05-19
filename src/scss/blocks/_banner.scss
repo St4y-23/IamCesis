@@ -2,13 +2,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 780px;
+  max-height: 780px;
 }
 .no-webp .banner{
   background-image: url(img/banner/banner_1.jpg);
 }
 .banner__inner{
-  padding: 200px 0;
+  padding: 200px 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
