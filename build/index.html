@@ -18,13 +18,18 @@
 
 
 		<!-- Preloader -->
-		<!-- <div class="preloader">
+		<div class="preloader">
 			<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-				<path fill="#000"
+				<path fill="#fff"
 					d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
 				</path>
 			</svg>
-		</div> -->
+		</div>
+
+		<!-- Background -->
+		<div class="background"></div>
+
+		
 
 		<!-- Sprites -->
 		<svg style="display: none;">
@@ -239,31 +244,53 @@
 		<!-- Header -->
 		<header class="header">
 
-  <a class="logo" href="#">
-    <svg class="logo__icon">
-      <use xlink:href="#logo"></use>
-      <defs>
-        <linearGradient id="skyGradient" x1="100%" y1="100%">
-          <stop offset="0%" stop-color="lightblue" stop-opacity=".8">
-            <animate attributeName="stop-color" values="lightblue;blue;red;red;aqua;red;red;purple;lightblue" dur="14s"
-              repeatCount="indefinite" />
-          </stop>
-          <stop offset="100%" stop-color="lightblue" stop-opacity=".8">
-            <animate attributeName="stop-color"
-              values="lightblue;orange;purple;purple;aqua;purple;purple;blue;lightblue" dur="14s"
-              repeatCount="indefinite" />
-            <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
-              repeatCount="indefinite" />
-          </stop>
-        </linearGradient>
-      </defs>
-    </svg>
-  </a>
+  <div class="header__logo">
+    <a class="logo" href="#">
+      <svg class="logo__icon">
+        <use xlink:href="#logo"></use>
 
-  <div class="burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+        <!-- <defs>
+          <linearGradient id="skyGradient" x1="100%" y1="100%">
+            <stop offset="0%" stop-color="lightblue" stop-opacity=".8">
+              <animate attributeName="stop-color" values="lightblue;blue;red;red;aqua;red;red;purple;lightblue"
+                dur="14s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="lightblue" stop-opacity=".8">
+              <animate attributeName="stop-color"
+                values="lightblue;orange;purple;purple;aqua;purple;purple;blue;lightblue" dur="14s"
+                repeatCount="indefinite" />
+              <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+                repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs> -->
+
+        <defs>
+          <linearGradient id="skyGradient" x1="100%" y1="100%">
+            <stop offset="0%" stop-color="lightblue" stop-opacity=".8">
+              <animate attributeName="stop-color" values="#00a7cf;#054f7d;#ff878d;#ff878d;#69d2e7;#ff878d;#ff878d;#861a54;#00a7cf"
+                dur="14s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="lightblue" stop-opacity=".8">
+              <animate attributeName="stop-color"
+                values="#00a7cf;orange;#861a54;#861a54;#69d2e7;#861a54;#861a54;#054f7d;#00a7cf" dur="14s"
+                repeatCount="indefinite" />
+              <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s"
+                repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs>
+
+      </svg>
+    </a>
+  </div>
+
+  <div class="header__burger">
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
   </div>
 
 

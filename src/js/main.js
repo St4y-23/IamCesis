@@ -3,17 +3,28 @@ $(window).on('load', function () {
   $('.preloader').delay(500).fadeToggle(500);
 
 
-  if (window.matchMedia("(min-width: 851px)").matches) {
+  if (window.matchMedia("(min-width: 861px)").matches) {
 
     // var link = Array.prototype.slice.call(document.querySelectorAll(".header__link")).reverse();
 
-    // var tl = gsap.timeline({ defaults: { duration: 1 } });
-    // tl.from(".intro__bg", { delay: 1, x: '-100%' })
-    //   .from(".header__bg", { x: '-100%', opacity: 0 }, "-=.5")
+    var tl = gsap.timeline({ defaults: { duration: 1 } });
+        tl.to(".background", { delay: 1, x: '100%' })
+          .from(".header__logo", { x: '-3%', opacity: 0 }, "-=.5")
+          // .from(".header__burger", { x: '-3%', opacity: 0 }, "-=.5")
+          .from(".intro__subtitle", { y: '25%', opacity: 0 }, "-=.3")
+          .from(".intro__btn", { opacity: 0 }, "-=.3")
+          .from(".intro__arrow", { opacity: 0 }, "-=.3")
 
 
     console.log('large')
   } else {
+
+    var tl = gsap.timeline({ defaults: { duration: 1 } });
+        tl.to(".background", { delay: 1, y: '-100%' })
+          .from(".header__logo", { y: '20%', opacity: 0 }, "-=.5")
+          .from(".intro__subtitle", { y: '25%', opacity: 0 })
+          .from(".intro__btn", { opacity: 0 }, "-=.3")
+          .from(".intro__arrow", { opacity: 0 }, "-=.3")
 
 
     console.log('small')
