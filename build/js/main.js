@@ -9,8 +9,9 @@ $(window).on('load', function () {
 
     var tl = gsap.timeline({ defaults: { duration: 1 } });
         tl.to(".background", { delay: 1, x: '100%' })
-          .from(".header__logo", { x: '-3%', opacity: 0 }, "-=.5")
+          .from(".header__logo", { x: '-2%', opacity: 0 }, "-=.5")
           // .from(".header__burger", { x: '-3%', opacity: 0 }, "-=.5")
+          .from(".intro__title", { y: '20%', opacity: 0 }, "-=.7")
           .from(".intro__subtitle", { y: '25%', opacity: 0 }, "-=.3")
           .from(".intro__btn", { opacity: 0 }, "-=.3")
           .from(".intro__arrow", { opacity: 0 }, "-=.3")
@@ -195,6 +196,22 @@ $(function () {
     }, 800);
     return false;
   });
+
+
+
+  var forEach = function (array, callback, scope) {
+    for (var i = 0; i < array.length; i++) {
+      callback.call(scope, i, array[i]);
+    }
+  };
+  window.onload = function(){
+    var max = -219.99078369140625;
+    forEach(document.querySelectorAll('.progress'), function (index, value) {
+    percent = value.getAttribute('data-progress');
+      value.querySelector('.progress__fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+      value.querySelector('.progress__value').innerHTML = percent + '%';
+    });
+  }
 
 
 

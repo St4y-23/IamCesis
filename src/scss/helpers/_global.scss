@@ -72,6 +72,26 @@ body {
   height: auto;
 }
 
+.suptitle{
+  font-size: rem(24);
+  font-weight: 600;
+  color: $blue;
+  line-height: 1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  color: $blue;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 80%;
+    background-color: $blue;
+    top: 2px;
+    left: 0;
+  }
+}
 .title {
   font-size: rem(80);
   color: $dark;
@@ -92,6 +112,18 @@ body {
   font-weight: 400;
   line-height: 1.7;
   margin-bottom: 30px;
+}
+
+.quote{
+  font-size: rem(30);
+  color: rgba($dark, .7);
+  @include Playfair400;
+  margin-bottom: 20px;
+}
+.author{
+  font-size: rem(16);
+  font-weight: 500;
+  color: $dark;
 }
 
 .center {
@@ -179,6 +211,8 @@ $sp-yellow: #efe348;
   animation-name: gradients;
   z-index: 1001;
 }
+
+
 
 
 .preloader__image {

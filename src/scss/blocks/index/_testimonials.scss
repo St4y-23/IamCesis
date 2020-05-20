@@ -3,6 +3,21 @@
   background: #f0fafd;
   padding: 140px 0;
 }
+.aboutPage .testimonials{
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+}
+.no-webp .aboutPage .testimonials{
+  background-image: url(../../../img/testimonials/testimonials_1.jpg);
+}
+.aboutPage .testimonials__title,
+.aboutPage .testimonials__subtitle{
+  color: #fff;
+}
+
+
+
 .testimonials__wrapper{
   display: flex;
   flex-direction: column;
