@@ -1,0 +1,39 @@
+.error{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-webp .error{
+  background-image: url(../img/404.jpg);
+}
+
+.error__inner{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+  align-items: center;
+}
+.error__num {
+  font-size: rem(200);
+  font-weight: 700;
+  line-height: 1;
+}
+.error__title{
+  font-size: rem(48);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.error__text{
+  font-size: rem(18);
+  margin-bottom: 25px;
+}
+.error__btn{
+  background: #fff;
+  color: $dark;
+}

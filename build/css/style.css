@@ -1973,6 +1973,51 @@ button.back-to-top.show:active {
   height: 600px;
 }
 
+.error {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-webp .error {
+  background-image: url(../img/404.jpg);
+}
+
+.error__inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+  align-items: center;
+}
+
+.error__num {
+  font-size: 12.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.error__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.error__text {
+  font-size: 1.125rem;
+  margin-bottom: 25px;
+}
+
+.error__btn {
+  background: #fff;
+  color: #2a2d2e;
+}
+
 .footer__inner {
   padding: 100px 0;
   display: flex;
@@ -2177,6 +2222,19 @@ button.back-to-top.show:active {
   .skills,
   .contact {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .error__num {
+    font-size: 7.5rem;
+  }
+  .error__title {
+    font-size: 1.875rem;
+  }
+  .error__text {
+    padding: 0 10px;
+    font-size: 1rem;
   }
 }
 
