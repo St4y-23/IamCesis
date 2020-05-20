@@ -4,6 +4,7 @@
 }
 
 .links__item{
+  position: relative;
   width: 16.66666%;
   display: flex;
   justify-content: center;
@@ -18,5 +19,57 @@
     .links__icon{
       fill: $dark;
     }
+    .links__name{
+      opacity: 1;
+      @include center;
+      top: 75%;
+      color: $dark;
+    }
   }
+}
+.links__name{
+  position: absolute;
+  @include center;
+  top: 80%;
+  opacity: 0;
+  transition: linear .2s;
+  color: #cfcfcf;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+
+.contactPage{
+
+  .links{
+    // background: linear-gradient(to left, $blue, $lightBlue);
+    background-image: linear-gradient(to right, $blue,$lightBlue,$violet,$pp-purple,$blue);
+  background-size: 600%;
+  background-position: 0 0;
+  /* Animation */
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-name: gradients;
+  }
+
+  .links__icon{
+    fill: #fff;
+  }
+  .links__item{
+    border-right: 1px solid #a6a7fe;
+  
+    &:hover{
+      .links__icon{
+        fill: #fff;
+      }
+      .links__name{
+        color: #fff;
+      }
+    }
+  }
+  .links__name{
+    color: #fff;
+  }
+
 }

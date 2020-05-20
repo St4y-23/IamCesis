@@ -9,8 +9,15 @@
   .partners,
   .news,
   .quotation,
-  .skills{
+  .skills,
+  .contact{
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 950px) {
+  .contactPage .intro__title {
+    font-size: rem(150);
   }
 }
 
@@ -20,6 +27,9 @@
     padding: 17px 0;
     font-weight: 600;
     font-size: rem(10);
+  }
+  .aboutPage .intro__title{
+    font-size: rem(150);
   }
 }
 
@@ -42,14 +52,14 @@
   button.back-to-top::after {
     top: -21px;
   }
+  .contactPage .intro__title {
+    font-size: rem(100);
+  }
 }
 
 @media (max-width: 760px) {
   .title {
     font-size: rem(50);
-  }
-  .intro__title {
-    font-size: rem(150);
   }
 }
 
@@ -63,7 +73,8 @@
   .partners,
   .news,
   .quotation,
-  .skills{
+  .skills,
+  .contact{
     margin-bottom: 50px;
   }
 }
@@ -78,8 +89,14 @@
   .suptitle{
     font-size: rem(20);
   }
-  .intro__title {
+  .aboutPage .intro__title{
     font-size: rem(100);
+  }
+}
+
+@media (max-width: 490px) {
+  .contactPage .intro__title {
+    font-size: rem(70);
   }
 }
 
@@ -1032,6 +1049,9 @@
   .links__item{
     padding: 50px 0;
   }
+  .links__name{
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1052,5 +1072,63 @@
   .links__icon{
     width: 28px;
     height: 28px;
+  }
+}
+
+
+// Contact Page //////////////////////////
+
+
+// Contact //////////////////////////
+@media (max-width: 1050px) {
+  .contact__inner{
+    justify-content: start;
+    flex-direction: column;
+  }
+  .contact__box{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact__address-inner{
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact__item{
+    max-width: 100%;
+    margin-bottom: 40px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .contact__inner{
+    margin-bottom: 50px;
+  }
+  .contact__address-inner{
+    padding-top: 50px;
+  }
+  .contact__item{
+    margin-bottom: 25px;
+  }
+  .contact__address-title{
+    font-size: rem(25);
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+// Map //////////////////////////
+@media (max-width: 767px) {
+  .map{
+    height: 400px;
   }
 }

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="content contactPage">
+
+		<button class="back-to-top" type="button"></button>
+
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="#fff"
+					d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+				</path>
+			</svg>
+		</div>
+
+		<!-- Background -->
+		<div class="background"></div>
+
+
+
+		<!-- Sprites -->
+		@@include('./blocks/_sprites.html')
+
+		<!-- Header -->
+		@@include('./blocks/_header.html')
+
+
+		<!-- Intro -->
+		<section class="intro" id="intro" style="background-image: url(img/main/main-bg_3.webp)">
+
+			<div class="intro__inner">
+				<h1 class="intro__title">Contact</h1>
+				<div class="intro__subtitle">Let’s talk about your next project</div>
+			</div>
+
+			<a class="intro__arrow" href="#contact">
+				<svg class="arrows" viewBox="0 0 60 72">
+					<path class="a1" d="M0 0 L30 32 L60 0"></path>
+					<path class="a2" d="M0 20 L30 52 L60 20"></path>
+					<path class="a3" d="M0 40 L30 72 L60 40"></path>
+				</svg>
+			</a>
+
+		</section>
+
+
+
+		<!-- Contact -->
+		<div class="contact" id="contact">
+
+			<div class="contact__wrapper">
+
+				<div class="contact__inner">
+
+					<div class="contact__box">
+						<div class="contact__suptitle suptitle">TRANMAUTRITAM</div>
+						<div class="contact__title title">Keep in touch</div>
+						<div class="contact__subtitle subtitle">I build identities and experiences to elevate & empower
+							organizations.
+						</div>
+						<p class="contact__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+					</div>
+
+					<form class="form">
+
+						<div class="form__input form__name">
+							<input type="text" name="name" required>
+							<label>Your name</label>
+						</div>
+
+						<div class="form__input form__email">
+							<input type="text" name="email" required>
+							<label>Email</label>
+						</div>
+
+						<div class="form__input form__phone">
+							<input type="text" name="phone" required>
+							<label>Phone</label>
+						</div>
+
+						<div class="form__input form__magazine">
+							<input type="text" name="magazine" required>
+							<label>Your magazine</label>
+						</div>
+
+						<div class="form__views">
+							<select name="views" placeholder="What are you looking for?">
+								<option disabled hidden selected>What are you looking for?</option>
+								<option>You looking this?</option>
+								<option>Or this?</option>
+							</select>
+						</div>
+
+						<div class="form__budget">
+							<select name="budget" placeholder="What's your budget?">
+								<option disabled hidden selected>What's your budget?</option>
+								<option>Budget 1</option>
+								<option>Budget 2</option>
+							</select>
+						</div>
+
+						<button class="btn" type="submit">keep in touch</button>
+
+					</form>
+
+				</div>
+
+
+				<div class="contact__address-inner">
+
+					<div class="contact__item">
+						<div class="contact__address-title">Postal Address</div>
+						<div class="contact__address">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+					</div>
+
+					<div class="contact__item">
+						<div class="contact__address-title">Envato HQ</div>
+						<div class="contact__address">121 King Street, Melbourne Victoria 3000 Australia - Map</div>
+					</div>
+
+					<div class="contact__item">
+						<div class="contact__address-title">Business Phone</div>
+						<div class="contact__address contact__address-phone">+61 3 8376 6284</div>
+						<div class="contact__address contact__address-phone">+44 3 7890 - 123</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- Map -->
+		<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12087.344195275211!2d-73.97712153508964!3d40.76563059448565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258589b9de7d7%3A0xa84f94ae9326a7b6!2z0KLQsNC50Lwt0KPQvtGA0L3QtdGALdGG0LXQvdGC0YA!5e0!3m2!1sru!2sru!4v1589974664340!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+
+		<!-- Links -->
+		<div class="links">
+			<div class="links__inner">
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#facebook"></use>
+					</svg>
+					<div class="links__name">Follow us on Facebook</div>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#twitter"></use>
+					</svg>
+					<div class="links__name">Follow us on Twitter</div>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#behance"></use>
+					</svg>
+					<div class="links__name">Follow us on Behance</div>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#dribbble"></use>
+					</svg>
+					<div class="links__name">Follow us on Dribbble</div>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#google-plus"></use>
+					</svg>
+					<div class="links__name">Follow us on Google Plus</div>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#wordpress"></use>
+					</svg>
+					<div class="links__name">Follow us on WordPress</div>
+				</a>
+
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Footer -->
+		@@include('./blocks/_footer.html')
+
+
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		@@include('./blocks/_scripts.html')
+		<script src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>
