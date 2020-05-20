@@ -16,6 +16,14 @@ $(window).on('load', function () {
           .from(".intro__btn", { opacity: 0 }, "-=.3")
           .from(".intro__arrow", { opacity: 0 }, "-=.3")
 
+    var tl = gsap.timeline({ defaults: { duration: 1 } });
+        tl.to(".background", { delay: 1, x: '100%' })
+          .from(".error__num", { y: '20%', opacity: 0 }, "-=.7")
+          .from(".error__title", { y: '20%', opacity: 0 }, "-=.7")
+          .from(".error__text", { y: '20%', opacity: 0 }, "-=.7")
+          .from(".error__btn", {  opacity: 0 }, "-=.7")
+          
+
 
     console.log('large')
   } else {
