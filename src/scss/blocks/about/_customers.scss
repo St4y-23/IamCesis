@@ -1,0 +1,22 @@
+.customers{
+  position: relative;
+}
+.customers__wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  padding: 0 15px;
+}
+.customers__box{
+  max-width: 800px;
+}
+.customers__btn{
+  height: 100%;
+  margin-top: 20px;
+}
+.tab__slider-image{
+  position: absolute;
+  @include center;
+  top: 70%;
+  z-index: 3;
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="content aboutPage">
+
+		<button class="back-to-top" type="button"></button>
+
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="#fff"
+					d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+				</path>
+			</svg>
+		</div>
+
+		<!-- Background -->
+		<div class="background"></div>
+
+
+
+		<!-- Sprites -->
+		@@include('./blocks/_sprites.html')
+
+		<!-- Header -->
+		@@include('./blocks/_header.html')
+
+
+		<!-- Intro -->
+		<section class="intro" id="intro" style="background-image: url(img/main/main-bg_2.webp)">
+
+			<div class="intro__inner">
+				<h1 class="intro__title">Hello!</h1>
+				<div class="intro__subtitle">I am Tranmautritam</div>
+				<div class="intro__btn btn btn--white">view portfolio</div>
+			</div>
+
+			<a class="intro__arrow" href="#quotation">
+				<svg class="arrows" viewBox="0 0 60 72">
+					<path class="a1" d="M0 0 L30 32 L60 0"></path>
+					<path class="a2" d="M0 20 L30 52 L60 20"></path>
+					<path class="a3" d="M0 40 L30 72 L60 40"></path>
+				</svg>
+			</a>
+
+		</section>
+
+		<!-- Quotation -->
+		<div class="quotation" id="quotation">
+			<div class="container">
+				<div class="quotation__inner">
+
+					<div class="quotation__box">
+						<div class="quotation__suptitle suptitle">TRANMAUTRITAM</div>
+						<div class="quotation__title title">Art Director at Cesis WordPress Theme</div>
+						<div class="quotation__subtitle subtitle">I build identities and experiences to elevate & empower
+							organizations.</div>
+						<p class="quotation__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+						<div class="quotation__btn btn">portfolio</div>
+					</div>
+
+					<div class="quotation__wrapper">
+						<div class="quotation__image">
+							<picture>
+								<source class="img" srcset="img/quotation/quotation.webp" type="image/webp">
+								<img class="img" src="img/quotation/quotation.jpg" alt="">
+							</picture>
+						</div>
+						<div class="quotation__quote quote">“ There are three responses to a piece of design – yes, no, & Wow! Wow
+							is the one to aim for ”</div>
+						<div class="quotation__author author">Milton Glaser</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Skills -->
+		<div class="skills">
+
+			<div class="skills__wrapper">
+				<div class="skills__title title">My Skills</div>
+				<div class="skills__subtitle subtitle">Why Cesis is one of the best WordPress Theme on ThemeForest. Let’s ask
+					our customers.</div>
+			</div>
+
+			<div class="progress__inner" id="progress">
+
+				<div class="progress__col">
+
+					<svg class="progress noselect" data-progress="85" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-blue" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">UX/UI Design</text>
+					</svg>
+
+					<svg class="progress noselect" data-progress="75" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-orange" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">Photography</text>
+					</svg>
+
+				</div>
+
+				<div class="progress__col">
+
+					<svg class="progress noselect" data-progress="90" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-aqua" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">Graphic Design</text>
+					</svg>
+
+					<svg class="progress noselect" data-progress="95" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-red" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">Interaction Design</text>
+					</svg>
+
+				</div>
+
+				<div class="progress__col">
+
+					<svg class="progress noselect" data-progress="70" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-green" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">Web Development</text>
+					</svg>
+
+					<svg class="progress noselect" data-progress="80" x="0px" y="0px" viewBox="0 0 80 80">
+						<path class="progress__fill progress__fill-grey" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+						<text class="progress__value" x="50%" y="55%">0%</text>
+						<text class="progress__text" x="50%" y="115%">Applications</text>
+					</svg>
+
+				</div>
+
+			</div> <!-- /progress__inner -->
+
+		</div>
+
+
+
+
+		<!-- Customers -->
+		<div class="customers">
+
+			<div class="tab__slider-image">
+				<picture>
+					<source class="img" srcset="img/tabs__slider/tabs-slider_logo.webp" type="image/webp">
+					<img class="img" src="img/tabs__slider/tabs-slider_logo.jpg" alt="">
+				</picture>
+			</div>
+
+			<div class="container">
+
+				<div class="customers__wrapper">
+
+					<div class="customers__box">
+						<div class="customers__title title">Customers</div>
+						<div class="customers__subtitle subtitle">I build identities and experiences to elevate & empower
+							organizations.</div>
+						<p class="customers__text text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
+					</div>
+
+					<div class="customers__btn btn">portfolio</div>
+
+				</div> <!-- customers__wrapper -->
+
+
+				<div class="tab__slider">
+
+					<div class="tab__slide">
+						<div class="tab__images">
+							<picture>
+								<source class="img" srcset="img/tabs__slider/tabs-slider_1.webp" type="image/webp">
+								<img class="img" src="img/tabs__slider/tabs-slider_1.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="tab__slide">
+						<div class="tab__images">
+							<picture>
+								<source class="img" srcset="img/tabs__slider/tabs-slider_2.webp" type="image/webp">
+								<img class="img" src="img/tabs__slider/tabs-slider_2.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="tab__slide">
+						<div class="tab__images">
+							<picture>
+								<source class="img" srcset="img/tabs__slider/tabs-slider_3.webp" type="image/webp">
+								<img class="img" src="img/tabs__slider/tabs-slider_3.jpg" alt="">
+							</picture>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- Partners -->
+		<div class="partners">
+			<div class="container">
+				<div class="partners__inner">
+
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_1.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_1.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_2.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_2.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_3.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_3.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_4.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_4.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_5.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_5.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_6.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_6.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_7.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_7.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_8.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_8.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_9.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_9.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+					<div class="partners__item">
+						<div class="partners__img">
+							<picture>
+								<source class="img" srcset="img/partners/partners_10.webp" type="image/webp">
+								<img class="img" src="img/partners/partners_10.png" alt="">
+							</picture>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		
+
+		<!-- Testimonials -->
+		<div class="testimonials" style="background-image: url(img/testimonials/testimonials_1.webp)">
+
+			<div class="testimonials__wrapper">
+				<div class="testimonials__title title">Testimonials</div>
+				<div class="testimonials__subtitle subtitle">Why Cesis is one of the best WordPress Theme on ThemeForest. Let’s
+					ask
+					our customers.</div>
+			</div>
+
+			<div class="testimonials__slider">
+
+				<div class="testimonials__slide">
+					<div class="testimonials__item">
+						<div class="testimonials__logo testimonials__logo--violet">
+							<svg class="testimonials__icon">
+								<use xlink:href="#user"></use>
+							</svg>
+						</div>
+						<p class="testimonials__text text">
+							Really nice theme, and its so good to work with. Also the customer support is very good and has fast reply
+							and the theme often get updates.
+						</p>
+						<div class="testimonials__name">Jordan Flores</div>
+						<div class="testimonials__company">Invision App</div>
+					</div>
+				</div>
+
+				<div class="testimonials__slide">
+					<div class="testimonials__item">
+						<div class="testimonials__logo testimonials__logo--red">
+							<svg class="testimonials__icon">
+								<use xlink:href="#user"></use>
+							</svg>
+						</div>
+						<p class="testimonials__text text">
+							Really nice theme, and its so good to work with. Also the customer support is very good and has fast reply
+							and the theme often get updates.
+						</p>
+						<div class="testimonials__name">Jordan Flores</div>
+						<div class="testimonials__company">Invision App</div>
+					</div>
+				</div>
+
+				<div class="testimonials__slide">
+					<div class="testimonials__item">
+						<div class="testimonials__logo testimonials__logo--lightBlue">
+							<svg class="testimonials__icon">
+								<use xlink:href="#user"></use>
+							</svg>
+						</div>
+						<p class="testimonials__text text">
+							Really nice theme, and its so good to work with. Also the customer support is very good and has fast reply
+							and the theme often get updates.
+						</p>
+						<div class="testimonials__name">Jordan Flores</div>
+						<div class="testimonials__company">Invision App</div>
+					</div>
+				</div>
+
+				<div class="testimonials__slide">
+					<div class="testimonials__item">
+						<div class="testimonials__logo testimonials__logo--blue">
+							<svg class="testimonials__icon">
+								<use xlink:href="#user"></use>
+							</svg>
+						</div>
+						<p class="testimonials__text text">
+							Really nice theme, and its so good to work with. Also the customer support is very good and has fast reply
+							and the theme often get updates.
+						</p>
+						<div class="testimonials__name">Jordan Flores</div>
+						<div class="testimonials__company">Invision App</div>
+					</div>
+				</div>
+
+				<div class="testimonials__slide">
+					<div class="testimonials__item">
+						<div class="testimonials__logo testimonials__logo--lightBlue">
+							<svg class="testimonials__icon">
+								<use xlink:href="#user"></use>
+							</svg>
+						</div>
+						<p class="testimonials__text text">
+							Really nice theme, and its so good to work with. Also the customer support is very good and has fast reply
+							and the theme often get updates.
+						</p>
+						<div class="testimonials__name">Jordan Flores</div>
+						<div class="testimonials__company">Invision App</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- Links -->
+		<div class="links">
+			<div class="links__inner">
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#facebook"></use>
+					</svg>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#twitter"></use>
+					</svg>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#behance"></use>
+					</svg>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#dribbble"></use>
+					</svg>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#google-plus"></use>
+					</svg>
+				</a>
+
+				<a class="links__item" href="#">
+					<svg class="links__icon">
+						<use xlink:href="#wordpress"></use>
+					</svg>
+				</a>
+
+			</div>
+		</div>
+		
+		
+
+
+		
+
+		<!-- Banner -->
+		<div class="banner" style="background-image: url(img/banner/banner_1.webp)">
+
+			<div class="banner__inner">
+				<div class="banner__title title">Let’s make your website great again</div>
+				<div class="banner__text">Creating a website has never been this easy with Cesis Theme</div>
+				<div class="banner__btn btn btn--white">buy cesis</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Footer -->
+		@@include('./blocks/_footer.html')
+
+
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		@@include('./blocks/_scripts.html')
+		<script src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>

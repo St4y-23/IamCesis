@@ -18,4 +18,9 @@ $red: #ff878d;
   transform: translate(-50%, -50%);
 }
 
+@mixin Playfair400{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
 

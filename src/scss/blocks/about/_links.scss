@@ -1,0 +1,22 @@
+.links__inner{
+  display: flex;
+  justify-content: center;
+}
+
+.links__item{
+  width: 16.66666%;
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  border-right: 1px solid #cfcfcf;
+
+  &:last-child{
+    border-right: none;
+  }
+
+  &:hover{
+    .links__icon{
+      fill: $dark;
+    }
+  }
+}
