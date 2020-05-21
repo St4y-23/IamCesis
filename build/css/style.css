@@ -1973,6 +1973,30 @@ button.back-to-top.show:active {
   height: 600px;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  height: 480px;
+  margin-bottom: 140px;
+  color: #2a2d2e;
+}
+
+.main__inner {
+  padding: 0 10px;
+}
+
+.main__title {
+  font-size: 12.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.main__subtitle {
+  font-size: 2.25rem;
+}
+
 .error {
   height: 100vh;
   background-repeat: no-repeat;
@@ -2156,7 +2180,8 @@ button.back-to-top.show:active {
   .news,
   .quotation,
   .skills,
-  .contact {
+  .contact,
+  .main {
     margin-bottom: 100px;
   }
 }
@@ -2220,7 +2245,8 @@ button.back-to-top.show:active {
   .news,
   .quotation,
   .skills,
-  .contact {
+  .contact,
+  .main {
     margin-bottom: 50px;
   }
 }
@@ -3188,5 +3214,38 @@ button.back-to-top.show:active {
 @media (max-width: 767px) {
   .map {
     height: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    height: 380px;
+  }
+  .main__title {
+    font-size: 9.375rem;
+  }
+  .main__subtitle {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    height: 280px;
+  }
+  .main__title {
+    font-size: 6.25rem;
+  }
+  .main__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__title {
+    font-size: 3.75rem;
+  }
+  .main__subtitle {
+    font-size: 1.375rem;
   }
 }
