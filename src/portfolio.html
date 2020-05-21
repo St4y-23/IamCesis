@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('./blocks/_head.html')
+
+<body>
+	<div class="content portfolioPage">
+
+		<button class="back-to-top" type="button"></button>
+
+
+		<!-- Preloader -->
+		<div class="preloader">
+			<svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="#fff"
+					d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+				</path>
+			</svg>
+		</div>
+
+		<!-- Background -->
+		<div class="background"></div>
+
+		
+
+		<!-- Sprites -->
+		@@include('./blocks/_sprites.html')
+
+		<!-- Header -->
+		@@include('./blocks/_header.html')
+
+
+		<!-- Main -->
+		<main class="main">
+			<div class="main__inner">
+				<h1 class="main__title">Our Work</h1>
+				<div class="main__subtitle">Let’s make your website Great Again!</div>
+			</div>
+		</main>
+
+		
+
+		<!-- Work -->
+		<div class="works">
+			<div class="container">
+
+				<div class="works__btn-box">
+					<button class="works__sort-btn" type="button" data-filter="all">All</button>
+					<button class="works__sort-btn" type="button" data-filter=".webDesign">Web Design</button>
+					<button class="works__sort-btn" type="button" data-filter=".interaction">Interaction</button>
+					<button class="works__sort-btn" type="button" data-filter=".applications">Applications</button>
+					<button class="works__sort-btn" type="button" data-filter=".branding">Branding</button>
+					<button class="works__sort-btn" type="button" data-filter=".graphicDesign">Graphic Design</button>
+					<button class="works__sort-btn" type="button" data-filter=".photography">Photography</button>
+				</div>
+
+				<div class="works__inner">
+
+					<!-- 1 -->
+					<div class="works__item works__item-big mix interaction " data-order="1">
+
+						<div class="works__image">
+							<picture>
+								<source class="img" srcset="img/works/works-big_1.webp" type="image/webp">
+								<img class="img" src="img/works/works-big_1.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="works__wrapper">
+							<div class="works__filter">Interaction</div>
+							<div class="works__name">Canon Microless Pack</div>
+						</div>
+
+					</div>
+
+					<!-- 2 -->
+
+					<div class="works__col mix webDesign" data-order="2">
+
+						<div class="works__item works__item-horzLong">
+							<div class="works__image">
+								<picture>
+									<source class="img" srcset="img/works/works-horzLong_1.webp" type="image/webp">
+									<img class="img" src="img/works/works-horzLong_1.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="works__wrapper">
+								<div class="works__filter">Web Design</div>
+								<div class="works__name">North Oxford Logo Design</div>
+							</div>
+						</div>
+
+						
+						<div class="works__item works__item-horzLong">
+							<div class="works__image">
+								<picture>
+									<source class="img" srcset="img/works/works-horzLong_2.webp" type="image/webp">
+									<img class="img" src="img/works/works-horzLong_2.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="works__wrapper">
+								<div class="works__filter">Web Design</div>
+								<div class="works__name">North Oxford Gymnastic</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- 3 -->
+					<div class="works__item works__item-vertLong mix photography" data-order="3">
+
+						<div class="works__image">
+							<picture>
+								<source class="img" srcset="img/works/works-vertLong_1.webp" type="image/webp">
+								<img class="img" src="img/works/works-vertLong_1.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="works__wrapper">
+							<div class="works__filter">Photography</div>
+							<div class="works__name">Cesis Fashion</div>
+						</div>
+
+					</div>
+
+					<!-- 4 -->
+					<div class="works__item works__item-big mix applications" data-order="4">
+
+						<div class="works__image">
+							<picture>
+								<source class="img" srcset="img/works/works-big_2.webp" type="image/webp">
+								<img class="img" src="img/works/works-big_2.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="works__wrapper">
+							<div class="works__filter">Applications</div>
+							<div class="works__name">Kinfolk Brochure</div>
+						</div>
+
+					</div>
+
+					<!-- 5 -->
+
+					<div class="works__col-small mix photography" data-order="5">
+
+						<div class="works__item works__item-small">
+
+							<div class="works__image">
+								<picture>
+									<source class="img" srcset="img/works/works-small_1.webp" type="image/webp">
+									<img class="img" src="img/works/works-small_1.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="works__wrapper">
+								<div class="works__filter">Photography</div>
+								<div class="works__name">Creative Design</div>
+							</div>
+
+						</div>
+
+						
+						<div class="works__item works__item-small">
+
+							<div class="works__image">
+								<picture>
+									<source class="img" srcset="img/works/works-small_2.webp" type="image/webp">
+									<img class="img" src="img/works/works-small_2.jpg" alt="">
+								</picture>
+							</div>
+
+							<div class="works__wrapper">
+								<div class="works__filter">Photography</div>
+								<div class="works__name">Cesis Fashion</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- 6 -->
+					<div class="works__item works__item-big mix graphicDesign" data-order="6">
+
+						<div class="works__image">
+							<picture>
+								<source class="img" srcset="img/works/works-big_3.webp" type="image/webp">
+								<img class="img" src="img/works/works-big_3.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="works__wrapper">
+							<div class="works__filter">Graphic Design</div>
+							<div class="works__name">Crazy Fashion</div>
+						</div>
+
+					</div>
+
+					<!-- 7 -->
+					<div class="works__item works__item-big mix branding" data-order="7">
+
+						<div class="works__image">
+							<picture>
+								<source class="img" srcset="img/works/works-big_4.webp" type="image/webp">
+								<img class="img" src="img/works/works-big_4.jpg" alt="">
+							</picture>
+						</div>
+
+						<div class="works__wrapper">
+							<div class="works__filter">Branding</div>
+							<div class="works__name">Don’t Just Stand There</div>
+						</div>
+
+					</div>
+
+
+				</div> <!-- /works__inner -->
+
+				<div class="center">
+					<div class="works__btn btn">view all</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- Plans -->
+		<div class="plans">
+
+			<div class="plans__wrapper">
+				<div class="plans__title title">Select your plans</div>
+				<div class="plans__subtitle subtitle">Creating a website has never been this easy with Cesis Theme</div>
+			</div>
+
+			<div class="plans__inner">
+
+				<div class="plans__col">
+					<div class="plans__item">
+						<div class="plans__logo">
+							<picture>
+								<source class="img" srcset="img/plans/plans_earth.webp" type="image/webp">
+								<img class="img" src="img/plans/plans_earth.jpg" alt="">
+							</picture>
+						</div>
+						<div class="plans__name">Personal Project</div>
+						<ul class="plans__categories">
+							<li class="plans__category">Logo Design</li>
+							<li class="plans__category plans__category-out">Brochure Template</li>
+							<li class="plans__category">Web Design</li>
+							<li class="plans__category plans__category-out">WordPress Development</li>
+							<li class="plans__category plans__category-out">Behance Presentation</li>
+							<li class="plans__category plans__category-out">Dribbble Shots</li>
+							<li class="plans__category">2 Revisions</li>
+							<li class="plans__category">Support via Email</li>
+						</ul>
+						<div class="plans__btn btn btn--white btn--small">from $999</div>
+					</div>
+				</div>
+
+				<div class="plans__col">
+					<div class="plans__item active">
+						<div class="plans__logo">
+							<picture>
+								<source class="img" srcset="img/plans/plans_rocket.webp" type="image/webp">
+								<img class="img" src="img/plans/plans_rocket.jpg" alt="">
+							</picture>
+						</div>
+						<div class="plans__name">Business Project</div>
+						<ul class="plans__categories">
+							<li class="plans__category">Logo Design</li>
+							<li class="plans__category">Brochure Template</li>
+							<li class="plans__category">Web Design</li>
+							<li class="plans__category">WordPress Development</li>
+							<li class="plans__category plans__category-out">Behance Presentation</li>
+							<li class="plans__category plans__category-out">Dribbble Shots</li>
+							<li class="plans__category">3 Revisions</li>
+							<li class="plans__category">Live-chat Support</li>
+						</ul>
+						<div class="plans__btn btn btn--white btn--small">from $999</div>
+					</div>
+				</div>
+
+				<div class="plans__col">
+					<div class="plans__item">
+						<div class="plans__logo">
+							<picture>
+								<source class="img" srcset="img/plans/plans_robot.webp" type="image/webp">
+								<img class="img" src="img/plans/plans_robot.jpg" alt="">
+							</picture>
+						</div>
+						<div class="plans__name">Exclusive Project</div>
+						<ul class="plans__categories">
+							<li class="plans__category">Logo Design</li>
+							<li class="plans__category">Brochure Template</li>
+							<li class="plans__category">Web Design</li>
+							<li class="plans__category">WordPress Development</li>
+							<li class="plans__category">Behance Presentation</li>
+							<li class="plans__category">Dribbble Shots</li>
+							<li class="plans__category">6 Revisions</li>
+							<li class="plans__category">Support via Email</li>
+						</ul>
+						<div class="plans__btn btn btn--white btn--small">from $999</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<!-- Partners -->
+		<div class="partners">
+			<div class="container">
+				<div class="partners__inner">
+
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_1.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_1.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_2.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_2.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_3.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_3.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_4.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_4.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_5.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_5.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_6.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_6.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_7.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_7.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_8.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_8.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_9.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_9.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						<div class="partners__item">
+							<div class="partners__img">
+								<picture>
+									<source class="img" srcset="img/partners/partners_10.webp" type="image/webp">
+									<img class="img" src="img/partners/partners_10.png" alt="">
+								</picture>
+							</div>
+						</div>
+
+						
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Banner -->
+		<div class="banner" style="background-image: url(img/banner/banner_1.webp)">
+
+			<div class="banner__inner">
+				<div class="banner__title title">Let’s make your website great again</div>
+				<div class="banner__text">Creating a website has never been this easy with Cesis Theme</div>
+				<div class="banner__btn btn btn--white">buy cesis</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Footer -->
+		@@include('./blocks/_footer.html')
+
+
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		@@include('./blocks/_scripts.html')
+		<script src="js/main.min.js"></script>
+	</div>
+</body>
+
+</html>
