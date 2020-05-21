@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 *,
@@ -209,7 +210,7 @@ body {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: gradients;
-  z-index: 1001;
+  z-index: 100;
 }
 
 .preloader__image {
@@ -504,7 +505,7 @@ button.back-to-top.show:active {
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-name: gradients;
-  z-index: 100;
+  z-index: 99;
   position: absolute;
   top: 0;
   left: 0;

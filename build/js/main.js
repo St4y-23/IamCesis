@@ -16,16 +16,19 @@ $(window).on('load', function () {
           .from(".intro__btn", { opacity: 0 }, "-=.3")
           .from(".intro__arrow", { opacity: 0 }, "-=.3")
 
+          .from(".main__title", { y: '20%', opacity: 0 }, "-=3")
+          .from(".main__subtitle", { y: '40%', opacity: 0 }, "-=2.5")
+
     var tl = gsap.timeline({ defaults: { duration: 1 } });
-        tl.to(".background", { delay: 1, x: '100%' })
-          .from(".error__num", { y: '20%', opacity: 0 }, "-=.7")
-          .from(".error__title", { y: '20%', opacity: 0 }, "-=.7")
-          .from(".error__text", { y: '20%', opacity: 0 }, "-=.7")
+        // tl.to(".background", { delay: 1, x: '100%' })
+          tl.from(".error__num", { y: '20%', opacity: 0 }, "-=1")
+          .from(".error__title", { y: '20%', opacity: 0 }, "-=.9")
+          .from(".error__text", { y: '20%', opacity: 0 }, "-=.8")
           .from(".error__btn", {  opacity: 0 }, "-=.7")
 
     var tl = gsap.timeline({ defaults: { duration: 1 } });
-        tl.to(".background", { delay: 1, x: '100%' })
-          .from(".main__title", { y: '20%', opacity: 0 }, "-=.1")
+        // tl.to(".background", { delay: 1, x: '100%' })
+          tl.from(".main__title", { y: '20%', opacity: 0 }, "-=.1")
           .from(".main__subtitle", { y: '20%', opacity: 0 }, "-=.4")
           
 
@@ -41,13 +44,15 @@ $(window).on('load', function () {
           .from(".intro__btn", { opacity: 0 }, "-=.3")
           .from(".intro__arrow", { opacity: 0 }, "-=.3")
 
+          .from(".main__title", { y: '20%', opacity: 0 }, "-=3.5")
+          .from(".main__subtitle", { y: '15%', opacity: 0 }, "-=3")
+
           .from(".error__num", { y: '20%', opacity: 0 }, "-=.7")
           .from(".error__title", { y: '20%', opacity: 0 }, "-=.7")
           .from(".error__text", { y: '20%', opacity: 0 }, "-=.7")
           .from(".error__btn", {  opacity: 0 }, "-=.7")
 
-          .from(".main__title", { y: '20%', opacity: 0 }, "-=1")
-          .from(".main__subtitle", { y: '20%', opacity: 0 }, "-=1")
+          
 
 
     // var tl = gsap.timeline({ defaults: { duration: 1 } });
