@@ -1,0 +1,47 @@
+.comments{
+  margin-bottom: 140px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0 45px;
+  max-height: 880px;
+}
+.no-webp .comments{
+  background-image: url(../img/main/main-bg_3.jpg)
+}
+.comments__bg{
+  background: rgba(#1a1a1d, .9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.comments__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  max-width: 1180px;
+  padding: 0 15px;
+}
+.comments__text{
+  @include Playfair400;
+  font-size: rem(40);
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: rgba(#fff, .7);
+}
+.comments__author{
+  font-size: rem(16);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.comments__product{
+  font-size: rem(12);
+  font-weight: 500;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}

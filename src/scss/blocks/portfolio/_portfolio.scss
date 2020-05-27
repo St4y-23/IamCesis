@@ -1,0 +1,124 @@
+.portfolio{
+  margin-bottom: 140px;
+}
+.portfolio__inner{
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.portfolio__title{
+  text-align: center;
+}
+
+.portfolio__crumbs{
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 50px;
+
+  li{
+    font-size: rem(18);
+    font-weight: 300;
+    color: $dark;
+    padding: 0 15px;
+    position: relative;
+
+    &:not(:first-child)::before{
+      position: absolute;
+      content: '.';
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.portfolio__description-items{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 90px;
+}
+.portfolio__description-item{
+  padding: 0 20px;
+  max-width: 460px;
+}
+.portfolio__description-item__title{
+  font-size: rem(30);
+  color: $dark;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.portfolio__description-image{
+  margin-bottom: 90px;
+}
+.portfolio__description-text{
+  max-width: 1000px;
+  font-size: rem(30);
+  @include Playfair400;
+  color: rgba($dark, .7);
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+
+.portfolio__process{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__process-container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.portfolio__process-title{
+  font-size: rem(30);
+  font-weight: 500;
+  color: $dark;
+}
+.portfolio__process-items{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 70px;
+}
+.portfolio__process-item{
+  width: 50%;
+  padding: 20px;
+}
+.portfolio__process-item__num{
+  font-size: rem(30);
+  font-weight: 500;
+  color: $blue;
+  margin-bottom: 20px;
+}
+.portfolio__process-item__text{
+  margin-bottom: 0;
+}
+
+.portfolio__process-images{
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__process-images__top{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.portfolio__process-image-small{
+  width: 50%;
+
+  &:first-child{
+    padding-right: 15px;
+  }
+
+  &:last-child{
+    padding-left: 15px;
+  }
+}
+.portfolio__process-image-big{
+  width: 100%;
+}

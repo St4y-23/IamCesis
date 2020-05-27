@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 *,
@@ -106,6 +105,14 @@ body {
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 30px;
+
+  &--big{
+    font-size: rem(50);
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 30px;
+    font-weight: 500;
+  }
 }
 .text {
   font-size: rem(14);
@@ -125,6 +132,13 @@ body {
   font-size: rem(16);
   font-weight: 500;
   color: $dark;
+}
+.line{
+  width: 170px;
+  height: 5px;
+  background-color: $blue;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .center {
