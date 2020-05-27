@@ -1,0 +1,32 @@
+.product{
+  margin-bottom: 140px;
+}
+.product__inner{
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 140px;
+}
+.product__col{
+  width: 50%;
+  padding: 0 15px;
+}
+.product__col-small{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__share{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+.product__share-title{
+  font-size: rem(18);
+  font-weight: 600;
+  color: $darkBlue;
+  margin-bottom: 20px;
+}

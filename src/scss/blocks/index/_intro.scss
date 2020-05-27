@@ -23,11 +23,17 @@
   align-items: center;
   text-align: center;
 }
+
 .intro__title {
   font-size: rem(200);
   font-weight: 700;
   line-height: 1;
 }
+.intro__title-portfolio{
+  font-weight: 600;
+}
+
+
 .title-svg{
   margin-bottom: 30px;
 }

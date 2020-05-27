@@ -45,7 +45,7 @@
   transition: linear 0.2s;
 
   &:hover {
-    color: $blue;
+    color: $darkBlue;
   }
 
   &:not(:first-child)::before {
