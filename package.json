@@ -31,6 +31,7 @@
     "gulp-file-include": "^2.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-webp": "^4.0.1",
-    "imagemin-jpeg-recompress": "^6.0.0"
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "magnific-popup": "^1.1.0"
   }
 }
