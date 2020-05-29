@@ -14,6 +14,10 @@
   font-size: rem(200);
   font-weight: 700;
   line-height: 1;
+
+  &--blue{
+    color: $blue;
+  }
 }
 .main__subtitle{
   font-size: rem(36);
