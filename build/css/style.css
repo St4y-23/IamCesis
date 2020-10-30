@@ -822,65 +822,65 @@ button.back-to-top.show:active {
   transform: translateX(-50%);
 }
 
-#logo {
+.title-svg.active #logo {
   animation: fill .5s ease forwards 5.3s;
 }
 
-#logo path:nth-child(1) {
+.title-svg.active #logo path:nth-child(1) {
   stroke-dashoffset: 427;
   stroke-dasharray: 427;
   animation: line-anim 2s ease forwards 1.5s;
 }
 
-#logo path:nth-child(2) {
+.title-svg.active #logo path:nth-child(2) {
   stroke-dashoffset: 1406;
   stroke-dasharray: 1406;
   animation: line-anim 5s ease forwards 1.8s;
 }
 
-#logo path:nth-child(3) {
+.title-svg.active #logo path:nth-child(3) {
   stroke-dashoffset: 912;
   stroke-dasharray: 912;
   animation: line-anim 2s ease forwards 2.1s;
 }
 
-#logo path:nth-child(4) {
+.title-svg.active #logo path:nth-child(4) {
   stroke-dashoffset: 673;
   stroke-dasharray: 673;
   animation: line-anim 2s ease forwards 2.4s;
 }
 
-#logo path:nth-child(5) {
+.title-svg.active #logo path:nth-child(5) {
   stroke-dashoffset: 912;
   stroke-dasharray: 912;
   animation: line-anim 2s ease forwards 2.7s;
 }
 
-#logo path:nth-child(6) {
+.title-svg.active #logo path:nth-child(6) {
   stroke-dashoffset: 673;
   stroke-dasharray: 673;
   animation: line-anim 2s ease forwards 3s;
 }
 
-#logo path:nth-child(7) {
+.title-svg.active #logo path:nth-child(7) {
   stroke-dashoffset: 627;
   stroke-dasharray: 627;
   animation: line-anim 2s ease forwards 3.3s;
 }
 
-#logo path:nth-child(8) {
+.title-svg.active #logo path:nth-child(8) {
   stroke-dashoffset: 579;
   stroke-dasharray: 579;
   animation: line-anim 2s ease forwards 3.6s;
 }
 
-#logo path:nth-child(9) {
+.title-svg.active #logo path:nth-child(9) {
   stroke-dashoffset: 414;
   stroke-dasharray: 414;
   animation: line-anim 2s ease forwards 3.9s;
 }
 
-#logo path:nth-child(10) {
+.title-svg.active #logo path:nth-child(10) {
   stroke-dashoffset: 579;
   stroke-dasharray: 579;
   animation: line-anim 2s ease forwards 4.2s;
@@ -2508,6 +2508,22 @@ button.back-to-top.show:active {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
+}
+
+.blogSingle {
+  margin-top: 240px;
+}
+
+.blogSingle__title {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.blogSingle__subtitle {
+  text-align: center;
+  font-size: 1.875rem;
 }
 
 .error {
